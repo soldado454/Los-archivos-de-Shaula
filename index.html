@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los archivos de Shaula</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los archivos de Shaula</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fffbfb;
-            text-align: center;
-            margin: 0;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffbfb;
+    text-align: center;
+    margin: 0;
+}
 
-        header {
-            background-color: #000000;
-            color: rgb(133, 4, 147);
-            padding: 20px;
-        }
+header {
+    background-color: #000000;
+    color: rgb(133, 4, 147);
+    padding: 20px;
+}
 
-        main {
-            padding: 30px;
-        }
+.boton {
+    display: inline-block;
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px;
+}
 
-        .boton {
-            display: inline-block;
-            background-color: #4b0082;
-            color: rgb(0, 0, 0);
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+.boton:hover {
+    background-color: #360061;
+}
 
-        .boton:hover {
-            background-color: #360061;
-        }
-    </style>
+/* TARJETA VOLÚMENES */
+.volumen {
+    display: flex;
+    gap: 20px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    align-items: center;
+    text-align: left;
+}
+
+.volumen img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.volumen div {
+    flex: 1;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .volumen {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -44,126 +73,193 @@
     <h1>Re:Zero Novelas</h1>
     <h1>Los archivos de shaula</h1>
     <p>Guías, arcos, rutas IF y historias secundarias</p>
-    <img src="shaula.jpeg" alt="Shaula" width="300">
+    <img src="shaula.jpeg" width="300">
 </header>
 
 <main>
 
-    <h1>¡Bienvenido!</h1>
-    <p>Explora los arcos de Re:Zero, personajes, novelas secundarias y rutas alternativas.</p>
+<h1>¡Bienvenido!</h1>
+<p>Explora los arcos de Re:Zero, personajes, novelas secundarias y rutas alternativas.</p>
 
-    <h1>De momento del 1-25 estan traducidos y sacados por la pagina "La biblioteca de echidna" asi que completo credito a los traductores y la pagina</h1>
+<a href="#" class="boton">Wiki</a>
+<a href="#" class="boton">Novelas secundarias</a>
+<a href="#" class="boton">rutas</a>
 
-    <a href="#" class="boton">Wiki</a>
+<h2>Algo importante es que de momento las traducciones son de "La Biblioteca de Echidna</h2>
+<h2>asi completo creditos a la pagina y sus traductores</h2>
+<h1>Novelas principales</h1>
 
-    <!--VOL 1-->
+<!-- VOL 1 -->
+<div class="volumen vol-centro">
+
+    <h2>Volumen 1</h2>
+
+    <img src="Emilia Vol 1.jpeg">
+
     <div>
-        <h1>Novelas principales</h1>
-        <img src="Emilia Vol 1.jpeg" alt="Emilia" width="500">
-        <h1>PDF del primer volumen:</h1>
-        <a href="Re.Zero NL-Vol-01(Furuki Fansub).pdf" target="_blank">Leer PDF</a>
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-01(Furuki Fansub).pdf" target="_blank">Leer PDF</a>
 
-        <h1>Prologo del volumen:</h1>
-        <h2>Subaru Natsuki, un joven que debería estar cursando el tercer año de secundaria pero que lleva mucho tiempo sin asistir a clases, vive una vida despreocupada y sin rumbo.
+        <h3>Prólogo:</h3>
+        <p>Subaru Natsuki, un joven que debería estar cursando el tercer año de secundaria pero que lleva mucho tiempo sin asistir a clases, vive una vida despreocupada y sin rumbo.
 
 Sin embargo, tras salir de una tienda de conveniencia, es transportado repentinamente a un mundo desconocido.
 
-Convencido de que por fin podrá vivir la aventura de sus sueños en otro mundo, Subaru se lanza a explorar su nueva realidad. Pero pronto descubrirá que las cosas no son tan sencillas como imaginaba, y que este nuevo mundo es mucho más cruel de lo que aparenta.</h2>
+Convencido de que por fin podrá vivir la aventura de sus sueños en otro mundo, Subaru se lanza a explorar su nueva realidad. Pero pronto descubrirá que las cosas no son tan sencillas como imaginaba, y que este nuevo mundo es mucho más cruel de lo que aparenta.</p>
     </div>
 
-    <!-- VOL 2 -->
-    <div style="display: flex; align-items: center; gap: 20px;">
+</div>
 
-        <div>
-            <h1>PDF del segundo volumen:</h1>
-            <a href="Re.Zero NL-Vol-02(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
+<!-- VOL 2 -->
+<div class="volumen vol-flex">
 
-            <h1>Prologo del volumen:</h1>
-            <h2>
-                Después de su turbulento primer día en la capital, Subaru es llevado por Emilia a la mansión de Roswaal. Allí intentará adaptarse a su nueva vida en este extraño mundo y conocerá a nuevos habitantes de la mansión, entre ellos las gemelas Rem y Ram, dos sirvientas que parecen sacadas de un sueño.
+    <div class="vol-texto">
+        <h2>Volumen 2</h2>
 
-                Sin embargo, la tranquilidad que tanto deseaba podría no durar mucho tiempo…
-            </h2>
-        </div>
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-02(Traducciones Ferindrad).pdf">Leer PDF</a>
 
-        <img src="rem y ram Vol 2.jpeg" alt="rem y ram" width="500">
+        <h3>Prólogo:</h3>
+        <p>Después de su turbulento primer día en la capital, Subaru es llevado por Emilia a la mansión de Roswaal. Allí intentará adaptarse a su nueva vida en este extraño mundo y conocerá a nuevos habitantes de la mansión, entre ellos las gemelas Rem y Ram, dos sirvientas que parecen sacadas de un sueño.
 
+Sin embargo, la tranquilidad que tanto deseaba podría no durar mucho tiempo…</p>
     </div>
 
-    <!-- VOL 3 -->
+    <img src="rem y ram Vol 2.jpeg">
+
+</div>
+
+<!-- VOL 3 -->
+<div class="volumen vol-centro">
+
+    <h2>Volumen 3</h2>
+
+    <img src="Beatrice Vol 3.jpeg">
+
     <div>
-        <img src="Beatrice Vol 3.jpeg" alt="Beatrice" width="500">
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-03(Traducciones Ferindrad).pdf">Leer PDF</a>
 
-        <h1>PDF del tercer volumen:</h1>
-        <a href="Re.Zero NL-Vol-03(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
-
-        <h1>Prologo del volumen:</h1>
+        <h3>Prólogo:</h3>
+        <p>ufffffff que god es beatrice muy muy goty</p>
     </div>
 
-    <!-- VOL 4 -->
-    <div style="display: flex; align-items: center; gap: 20px;">
+</div>
 
-        <img src="Priscila Vol 4.jpeg" alt="Priscila" width="500">
+<!-- VOL 4 -->
+<div class="volumen vol-flex">
 
-        <div>
-            <h1>PDF del volumen:</h1>
-            <a href="Re.Zero NL-Vol-04(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
+    <img src="Priscila Vol 4.jpeg">
 
-            <h1>Prologo del volumen:</h1>
-            <h2>rem rem rem rem rem rem rem y mas rem rem rem rem rem rem rem y mas mas mas rem rem rem god rem rem</h2>
-        </div>
+    <div class="vol-texto">
+        <h2>Volumen 4</h2>
+
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-04(Traducciones Ferindrad).pdf">Leer PDF</a>
+
+        <h3>Prólogo:</h3>
+        <p>rem rem rem rem rem rem rem rem rem remrem rem rem rem rem rem rem rem rem rem rem rem rem rem rem rem rem rem rem remrem rem rem rem rem rem rem rem rem rem ¿quien es rem? nooooooooo reeeeeemmmmmm</p>
     </div>
-        <!--VOL 5-->
-        <div>
-            <img src="Felix y Crusch Vol 5.jpeg" alt="Felix y Crusch" width="500">
 
-            <h1>PDF del quinto volumen:</h1>
-            <a href="Re.Zero NL-Vol-05(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
-        <h1>Prologo del volumen:</h1>
-        <h2></h2>
-        </div>
-    <!--Vol 6-->
-    <div style="display: flex; align-items: center; gap: 20px;">
+</div>
 
-        <div>
-            <h1>PDF del segundo volumen:</h1>
-            <a href="Re.Zero NL-Vol-06(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
+<!-- VOL 5 -->
+<div class="volumen vol-flex">
 
-            <h1>Prologo del volumen:</h1>
-            <h2>hola wenas como estan 27+27=161607 mucho de esto ahhhhhhhhhhhhh</h2>
-        </div>
+    <div class="vol-texto">
+        <h2>Volumen 5</h2>
 
-        <img src="Anastasia Vol 6.jpeg" alt="Anastasia" width="500">
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-05(Traducciones Ferindrad).pdf">Leer PDF</a>
 
+        <h3>Prólogo:</h3>
+        <p>felix esta entero rico uffffff</p>
     </div>
-    <!--Vol 7-->
+
+    <img src="Felix y Crusch Vol 5.jpeg">
+
+</div>
+
+<!-- VOL 6 -->
+<div class="volumen vol-centro">
+
+    <h2>Volumen 6</h2>
+
+    <img src="Anastasia Vol 6.jpeg">
+
     <div>
-        <img src="Wilhelm Vol 7.jpeg" alt="Wilhelm" width="500">
-        <h1>PDF del volumen:</h1>
-        <a href="Re.Zero NL-Vol-07(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
-    <h1>Prologo del volumen</h1>
-    <h2>hhsadhga</h2>
+        <h3>PDF:</h3>
+        <a class="boton" href="Anastasia Vol 6.jpeg">Leer PDF</a>
+
+        <h3>Prólogo:</h3>
+        <p>hostia la zorra</p>
     </div>
-    <!--Vol 8-->
-    <div style="display: flex; align-items: center; gap: 20px;">
 
-        <img src="Felt y Reinhard Vol 8.jpeg" alt="Felt y Reinhard" width="500">
+</div>
 
-        <div>
-            <h1>PDF del volumen:</h1>
-            <a href="Re.Zero NL-Vol-08.pdf" target="_blank">Leer PDF</a>
-
-            <h1>Prologo del volumen:</h1>
-            <h2>Reinhacks</h2>
-        </div>
-    </div>
-    <!--Vol 9-->
+<!-- VOL 7 -->
+<div class="volumen">
+    <img src="Wilhelm Vol 7.jpeg">
     <div>
-            <img src="Emilia 2 Vol 9.jpeg" alt="Emilia 2" width="500">
-            <h1>PDF del volumen:</h1>
-             <a href="Re.Zero NL-Vol-09.pdf" target="_blank">Leer PDF</a>
-       <h1>Prologo del volumen:</h1>
-       <h2>ufffff emilia</h2>
+        <h2>Volumen 7</h2>
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-07(Traducciones Ferindrad).pdf" target="_blank">Leer PDF</a>
+        <h3>Prólogo:</h3>
+        <p>cbchbcdbhvbvbvuhuhdjskj</p>
     </div>
+</div>
+
+<!-- VOL 8 -->
+<div class="volumen vol-centro">
+
+    <h2>Volumen 8</h2>
+
+    <img src="Felt y Reinhard Vol 8.jpeg">
+
+    <div>
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-08.pdf">Leer PDF</a>
+
+        <h3>Prólogo:</h3>
+        <p>Reinhacks</p>
+    </div>
+
+</div>
+
+<!-- VOL 9 -->
+<div class="volumen vol-flex">
+
+    <div class="vol-texto">
+        <h2>Volumen 9</h2>
+
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-09.pdf">Leer PDF</a>
+
+        <h3>Prólogo:</h3>
+        <p>uy uy uy emilia</p>
+    </div>
+
+    <img src="Emilia 2 Vol 9.jpeg">
+
+</div>
+
+<!-- VOL 10 -->
+<div class="volumen vol-centro">
+
+    <h2>Volumen 10</h2>
+
+    <img src="echidna Vol 10.jpeg">
+
+    <div>
+        <h3>PDF:</h3>
+        <a class="boton" href="Re.Zero NL-Vol-10v2.pdf">Leer PDF</a>
+
+        <h3>Prólogo:</h3>
+        <p>De momento ni una portada que salga subaru</p>
+    </div>
+
+</div>
+
+</main>
 </body>
 </html>
