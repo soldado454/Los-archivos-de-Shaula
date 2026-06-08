@@ -6,6 +6,7 @@
 
 <title>Los Archivos de Shaula</title>
 
+
 <style>
 
 /* =========================
@@ -227,6 +228,41 @@ nav button:hover{
 .wiki-btn:hover{
     background:#b84dff;
 }
+/* voz de subaru */
+.wa-audio{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#2a0f3d;
+    border:1px solid #8c2fff;
+    padding:10px 15px;
+    border-radius:20px;
+    width:fit-content;
+    margin-top:10px;
+}
+
+.wa-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#8c2fff;
+    border:none;
+    cursor:pointer;
+    color:white;
+    font-size:16px;
+    transition:0.2s;
+}
+
+.wa-btn:hover{
+    background:#b84dff;
+    transform:scale(1.05);
+}
+
+.wa-label{
+    font-size:14px;
+    color:#ccc;
+}
+
 </style>
 </head>
 
@@ -252,6 +288,18 @@ nav button:hover{
     <img src="Shaula la vieja del josue.jpeg" alt="Shaula">
 
 </div>
+<script>
+function playWA(id){
+    const audio = document.getElementById(id);
+
+    if(audio.paused){
+        audio.play();
+    } else {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+}
+</script>
 <body>
 
 <!-- =========================
@@ -631,25 +679,128 @@ Ver personajes
 Volver a Wiki
 </button>
 
+</section>
 <!-- =========================
      Subaru wiki
 ========================= -->
-</section>
-
 <section id="subaru" class="seccion">
+
+<div style="
+max-width:1200px;
+margin:auto;
+background:#2b0d44;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(140,47,255,0.4);">
 
 <h2 class="titulo-seccion">Subaru Natsuki</h2>
 
-<img src="Subaru Wiki.jpeg" width="300">
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:flex-start;">
 
-<p>
-Protagonista de Re:Zero.
-Posee la habilidad Retorno por la Muerte y lucha para proteger a sus amigos.
+<img src="Subaru Wiki.jpeg"
+alt="Subaru Natsuki"
+style="
+width:300px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255, 255, 255, 0.5);">
+
+<div style="flex:1; min-width:300px;">
+
+<h3 style="color:#d39cff;">Información General</h3>
+
+<p style="line-height:1.8;">
+Subaru Natsuki es el protagonista principal de Re:Zero.
+Tras ser transportado repentinamente a otro mundo, obtiene
+la habilidad conocida como <b>Retorno por Muerte</b>,
+que le permite regresar a un punto anterior después de morir.
 </p>
 
+<br>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+background:#1f1f1f;
+border-radius:10px;
+overflow:hidden;">
+
+<tr>
+<td style="padding:12px;"><b>Nombre</b></td>
+<td style="padding:12px;">Subaru Natsuki</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Edad</b></td>
+<td style="padding:12px;">17 años</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Altura</b></td>
+<td style="padding:12px;">173 cm o 5'8"</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Peso</b></td>
+<td style="padding:12px;">66-70 kg</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Primera aparición</b></td>
+<td style="padding:12px;">Volumen 1</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Actor de voz en anime</b></td>
+<td style="padding:12px;">Yūsuke Kobayashi</td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="wa-audio">
+
+    <button class="wa-btn"
+    onclick="playWA('vozSubaru')">
+        ▶
+    </button>
+
+    <span class="wa-label">
+        Escuchar voz de Subaru
+    </span>
+
+</div>
+
+<audio id="vozSubaru">
+    <source src="subaru.mp4" type="audio/mp4">
+</audio>
+</div>
+
+</div>
+
+<br><br>
+
+<h3 style="color:#d39cff;">Descripción</h3>
+
+<p style="line-height:1.8;">
+Aunque al principio parece un joven común y corriente,
+Subaru demuestra una gran determinación para proteger a
+las personas que aprecia. A lo largo de la historia enfrenta
+numerosos desafíos, muertes y sufrimiento, desarrollando
+una fuerte voluntad para seguir adelante.
+</p>
+
+<br>
+
 <button onclick="mostrarSeccion('personajes')" class="wiki-btn">
-Volver a Personajes
+⬅ Volver a Personajes
 </button>
+
+</div>
 
 </section>
 <!-- =========================
