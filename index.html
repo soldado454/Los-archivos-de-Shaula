@@ -639,7 +639,7 @@ Ver personajes
     </div>
 </div>
 
-<div class="card">
+<div class="card" onclick="mostrarSeccion('emilia')">
 <img src="Emilia Wiki.jpeg">
 <div class="card-content">
 <h3>Emilia</h3>
@@ -647,7 +647,7 @@ Ver personajes
 </div>
 </div>
 
-<div class="card">
+<div class="card" onclick="mostrarSeccion('puck')">
 <img src="puck wiki.jpeg">
 <div class="card-content">
 <h3>Puck</h3>
@@ -655,11 +655,11 @@ Ver personajes
 </div>
 </div>
 
-<div class="card">
+<div class="card" onclick="mostrarSeccion('felt')">
 <img src="felt Wiki.jpeg">
 <div class="card-content">
 <h3>Felt</h3>
-<p>wenas soy felt</p>
+<p>Wenas soy felt</p>
 </div>
 </div>
 
@@ -740,7 +740,7 @@ overflow:hidden;">
 
 <tr>
 <td style="padding:12px;"><b>Altura</b></td>
-<td style="padding:12px;">173 cm o 5'8"</td>
+<td style="padding:12px;">173 cm o (5'8")</td>
 </tr>
 
 <tr>
@@ -784,16 +784,6 @@ overflow:hidden;">
 
 <br><br>
 
-<h3 style="color:#d39cff;">Descripción</h3>
-
-<p style="line-height:1.8;">
-Aunque al principio parece un joven común y corriente,
-Subaru demuestra una gran determinación para proteger a
-las personas que aprecia. A lo largo de la historia enfrenta
-numerosos desafíos, muertes y sufrimiento, desarrollando
-una fuerte voluntad para seguir adelante.
-</p>
-
 <br>
 
 <button onclick="mostrarSeccion('personajes')" class="wiki-btn">
@@ -804,50 +794,334 @@ una fuerte voluntad para seguir adelante.
 
 </section>
 <!-- =========================
-     NOVELAS SECUNDARIAS
+     Wenas esto es lo de emilia
 ========================= -->
+ <section id="emilia" class="seccion">
 
-<section id="secundarias" class="seccion">
+<div style="
+max-width:1200px;
+margin:auto;
+background:#2b0d44;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(140,47,255,0.4);">
 
-<h2 class="titulo-seccion">Novelas Secundarias</h2>
+<h2 class="titulo-seccion">Emilia</h2>
 
-<div class="grid">
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:flex-start;">
 
-<div class="card">
-<div class="card-content">
-<h3>EX</h3>
-<p>Historias previas a los eventos principales.</p>
-<a href="#">Leer</a>
-</div>
+<img src="Emilia Wiki.jpeg"
+alt="Emilia"
+style="
+width:300px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,255,255,0.5);">
+
+<div style="flex:1; min-width:300px;">
+
+<h3 style="color:#d39cff;">Información General</h3>
+
+<p style="line-height:1.8;">
+Emilia es una semielfa y una de las candidatas a la selección real
+del Reino de Lugunica. Es amable, compasiva y una de las personas
+más importantes para Subaru.
+</p>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+background:#1f1f1f;
+border-radius:10px;
+overflow:hidden;">
+
+<tr>
+<td style="padding:12px;"><b>Nombre</b></td>
+<td style="padding:12px;">Emilia</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Edad</b></td>
+<td style="padding:12px;">Edad cronologica: 114 años aprox.</td>
+<td style="padding: 12px;">Edad fisica: 18 años aprox.</td>
+<td style="padding: 12px;">Edad mental: 15 aprox.</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Altura</b></td>
+<td style="padding:12px;">164 cm o (5'5")</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Peso</b></td>
+<td style="padding:12px;">Desconocido</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Primera aparicion</b></td>
+<td style="padding:12px;">Volumen 1</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Actor de voz</b></td>
+<td style="padding:12px;">Rie Takahashi</td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="wa-audio">
+
+<button class="wa-btn"
+onclick="playWA('vozEmilia')">
+▶
+</button>
+
+<span class="wa-label">
+Escuchar voz de Emilia
+</span>
+
 </div>
 
-<div class="card">
-<div class="card-content">
-<h3>Tanpenshuu</h3>
-<p>Colecciones de historias cortas.</p>
-<a href="#">Leer</a>
-</div>
+<audio id="vozEmilia">
+<source src="Emilia-voz.mp4" type="audio/mp4">
+</audio>
+
 </div>
 
-<div class="card">
-<div class="card-content">
-<h3>Historias Secundarias</h3>
-<p>Relatos adicionales del universo Re:Zero.</p>
-<a href="#">Leer</a>
-</div>
 </div>
 
-<div class="card">
-<div class="card-content">
-<h3>Historias de Personajes</h3>
-<p>Profundizan en personajes específicos.</p>
-<a href="#">Leer</a>
-</div>
-</div>
+<br>
+
+<button onclick="mostrarSeccion('personajes')" class="wiki-btn">
+⬅ Volver a Personajes
+</button>
 
 </div>
 
 </section>
+
+<!-- =========================
+     Voz puck
+========================= -->
+<section id="puck" class="seccion">
+
+<div style="
+max-width:1200px;
+margin:auto;
+background:#2b0d44;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(140,47,255,0.4);">
+
+<h2 class="titulo-seccion">Puck</h2>
+
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:flex-start;">
+
+<img src="puck wiki.jpeg"
+alt="Puck"
+style="
+width:300px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,255,255,0.5);">
+
+<div style="flex:1; min-width:300px;">
+
+<h3 style="color:#d39cff;">Información General</h3>
+
+<p style="line-height:1.8;">
+Puck es el Gran Espíritu de Hielo y compañero de Emilia.
+Normalmente adopta la forma de un pequeño gato gris y
+siente un enorme cariño por Emilia.
+</p>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+background:#1f1f1f;
+border-radius:10px;
+overflow:hidden;">
+
+<tr>
+<td style="padding:12px;"><b>Nombre</b></td>
+<td style="padding:12px;">Puck</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Edad</b></td>
+<td style="padding:12px;">+420</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Altura</b></td>
+<td style="padding:12px;">forma gato: 9 cm o (4")</td>
+<td style="padding:12px;">Forma Bestia del fin: 20 m o (65'7)</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Peso</b></td>
+<td style="padding:12px;">5g</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Primera aparicion</b></td>
+<td style="padding:12px;">Volumen 1</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Actor de voz</b></td>
+<td style="padding:12px;">Yumi Uchiyama</td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="wa-audio">
+
+<button class="wa-btn"
+onclick="playWA('vozPuck')">
+▶
+</button>
+
+<span class="wa-label">
+Escuchar voz de Puck
+</span>
+
+</div>
+
+<audio id="vozPuck">
+<source src="Puck voz.mp4" type="audio/mp4">
+</audio>
+
+</div>
+
+</div>
+
+<br>
+
+<button onclick="mostrarSeccion('personajes')" class="wiki-btn">
+⬅ Volver a Personajes
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+     Felt wiki
+========================= -->
+<section id="felt" class="seccion">
+
+<div style="
+max-width:1200px;
+margin:auto;
+background:#2b0d44;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(140,47,255,0.4);">
+
+<h2 class="titulo-seccion">Felt</h2>
+
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:flex-start;">
+
+<img src="felt Wiki.jpeg"
+alt="Felt"
+style="
+width:300px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,255,255,0.5);">
+
+<div style="flex:1; min-width:300px;">
+
+<h3 style="color:#d39cff;">Información General</h3>
+<br>
+
+<p>
+Felt es una de las candidatas a la selección real de Lugunica.
+Fue criada en los barrios bajos de la capital y posteriormente
+descubrió su linaje real.
+</p>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+background:#1f1f1f;
+border-radius:10px;
+overflow:hidden;">
+
+<tr>
+<td style="padding:12px;"><b>Nombre</b></td>
+<td style="padding:12px;">Felt</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Edad</b></td>
+<td style="padding:12px;">15 años</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Altura</b></td>
+<td style="padding:12px;">150 cm (4'11")</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Peso</b></td>
+<td style="padding:12px;">40-45 kg</td>
+</tr>
+
+<tr>
+<td style="padding:12px;"><b>Actor de voz</b></td>
+<td style="padding:12px;">Akasaki Chinatsu</td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="wa-audio">
+
+<button class="wa-btn"
+onclick="playWA('vozPuck')">
+▶
+</button>
+
+<span class="wa-label">
+Escuchar voz de Felt
+</span>
+
+</div>
+
+<audio id="Felt-voz">
+<source src="Felt-voz.mp4" type="audio/mp4">
+</audio>
+
+</div>
+
+</div>
+
+<br>
+
+<button onclick="mostrarSeccion('personajes')" class="wiki-btn">
+⬅ Volver a Personajes
+</button>
+
+</div>
+
+</section>
+
 
 <!-- =========================
      RUTAS IF
